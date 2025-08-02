@@ -1,0 +1,655 @@
+   /* Reset and base styles */
+   * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+   }
+
+   body {
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+     background-color: #1a1a1a;
+     color: #ffffff;
+   }
+
+   /* Layout utilities */
+   .wrap {
+     min-height: 100vh;
+     width: 100%;
+   }
+
+   .flex {
+     display: flex;
+   }
+
+   .w-full {
+     width: 100%;
+   }
+
+   .h-full {
+     height: 100%;
+   }
+
+   .gap-3 {
+     gap: 0.75rem;
+   }
+
+   .flex-row {
+     flex-direction: row;
+   }
+
+   .flex-col {
+     flex-direction: column;
+   }
+
+   .items-center {
+     align-items: center;
+   }
+
+   .justify-center {
+     justify-content: center;
+   }
+
+   .justify-between {
+     justify-content: space-between;
+   }
+
+   .justify-end {
+     justify-content: flex-end;
+   }
+
+   .flex-1 {
+     flex: 1 1 0%;
+   }
+
+   .flex-shrink {
+     flex-shrink: 1;
+   }
+
+   .overflow-auto {
+     overflow: auto;
+   }
+
+   .overflow-y-auto {
+     overflow-y: auto;
+   }
+
+   .overflow-x-auto {
+     overflow-x: auto;
+   }
+
+   .overflow-x-hidden {
+     overflow-x: hidden;
+   }
+
+   .overflow-y-visible {
+     overflow-y: visible;
+   }
+
+   /* Positioning */
+   .relative {
+     position: relative;
+   }
+
+   .z-10 {
+     z-index: 10;
+   }
+
+   /* Spacing */
+   .gap-y-4 {
+     row-gap: 1rem;
+   }
+
+   .gap-1\.5 {
+     gap: 0.375rem;
+   }
+
+   .gap-\[1px\] {
+     gap: 1px;
+   }
+
+   .px-3 {
+     padding-left: 0.75rem;
+     padding-right: 0.75rem;
+   }
+
+   .px-4 {
+     padding-left: 1rem;
+     padding-right: 1rem;
+   }
+
+   .px-6 {
+     padding-left: 1.5rem;
+     padding-right: 1.5rem;
+   }
+
+   .py-3 {
+     padding-top: 0.75rem;
+     padding-bottom: 0.75rem;
+   }
+
+   .py-4 {
+     padding-top: 1rem;
+     padding-bottom: 1rem;
+   }
+
+   .pr-2 {
+     padding-right: 0.5rem;
+   }
+
+   .pr-4 {
+     padding-right: 1rem;
+   }
+
+   .pb-20 {
+     padding-bottom: 5rem;
+   }
+
+   .mb-\[1px\] {
+     margin-bottom: 1px;
+   }
+
+   /* Dimensions */
+   .w-12 {
+     width: 3rem;
+   }
+
+   .w-6 {
+     width: 1.5rem;
+   }
+
+   .h-9 {
+     height: 2.25rem;
+   }
+
+   .h-8 {
+     height: 2rem;
+   }
+
+   .h-6 {
+     width: 1.5rem;
+     height: 1.5rem;
+   }
+
+   .h-fit {
+     height: fit-content;
+   }
+
+   .h-0 {
+     height: 0;
+   }
+
+   /* Colors - Dark theme similar to saharagames */
+   .bg-secondary-200 {
+     background-color: #2a2a2a;
+   }
+
+   .bg-leftbar-container {
+     background-color: #1e1e1e;
+   }
+
+   .bg-secondary-button {
+     background-color: #333333;
+   }
+
+   .bg-primary-700 {
+     background-color: #1a1a1a;
+   }
+
+   .bg-active {
+     background-color: #4a90e2;
+   }
+
+   .bg-leftbar-group-sport {
+     background-color: #2d2d2d;
+   }
+
+   .bg-secondary-600 {
+     background-color: #2a2a2a;
+   }
+
+   .bg-primary-400 {
+     background-color: #3a3a3a;
+   }
+
+   .bg-opacity-70:hover {
+     background-color: rgba(42, 42, 42, 0.7);
+   }
+
+   /* Text colors */
+   .text-secondary-button-font {
+     color: #cccccc;
+   }
+
+   .text-active-font {
+     color: #ffffff;
+   }
+
+   .text-leftbar-group-sport-font {
+     color: #cccccc;
+   }
+
+   .text-white {
+     color: #ffffff;
+   }
+
+   .text-xl {
+     font-size: 1.25rem;
+     line-height: 1.75rem;
+   }
+
+   .uppercase {
+     text-transform: uppercase;
+   }
+
+   /* Visibility */
+   .hidden {
+     display: none;
+   }
+
+   /* Cursor */
+   .cursor-pointer {
+     cursor: pointer;
+   }
+
+   /* Opacity */
+   .opacity-80 {
+     opacity: 0.8;
+   }
+
+   .opacity-100 {
+     opacity: 1;
+   }
+
+   .group:hover .group-hover\:opacity-100 {
+     opacity: 1;
+   }
+
+   /* Transitions */
+   .duration-300 {
+     transition-duration: 300ms;
+   }
+
+   .duration-500 {
+     transition-duration: 500ms;
+   }
+
+   .rotate-180 {
+     transform: rotate(180deg);
+   }
+
+   /* Grid */
+   .grid {
+     display: grid;
+   }
+
+   .grid-cols-1 {
+     grid-template-columns: repeat(1, minmax(0, 1fr));
+   }
+
+   .gap-4 {
+     gap: 1rem;
+   }
+
+   .gap-6 {
+     gap: 1.5rem;
+   }
+
+   .col-span-1 {
+     grid-column: span 1 / span 1;
+   }
+
+   /* Border radius */
+   .rounded-lg {
+     border-radius: 0.5rem;
+   }
+
+   /* Shadow */
+   .shadow-lg {
+     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+   }
+
+   /* Responsive design */
+   @media (min-width: 768px) {
+     .md\:flex {
+       display: flex;
+     }
+
+     .md\:flex-row {
+       flex-direction: row;
+     }
+
+     .md\:overflow-x-auto {
+       overflow-x: auto;
+     }
+
+     .md\:grid-cols-2 {
+       grid-template-columns: repeat(2, minmax(0, 1fr));
+     }
+   }
+
+   @media (min-width: 1024px) {
+     .lg\:hidden {
+       display: none;
+     }
+   }
+
+   @media (min-width: 1280px) {
+     .xl\:grid-cols-3 {
+       grid-template-columns: repeat(3, minmax(0, 1fr));
+     }
+
+     .xl\:gap-6 {
+       gap: 1.5rem;
+     }
+   }
+
+   /* Hover effects */
+   .hover\:overflow-y-visible:hover {
+     overflow-y: visible;
+   }
+
+   .hover\:bg-opacity-70:hover {
+     background-color: rgba(42, 42, 42, 0.7);
+   }
+
+   /* Promo Overlay Styles - Full Screen */
+   .promo-overlay {
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.8);
+     display: none;
+     z-index: 1000;
+     opacity: 0;
+     transition: opacity 0.3s ease;
+   }
+
+   .readmore {
+     margin-right: 0.3rem;
+   }
+
+   .promo-overlay.active {
+     display: block;
+     opacity: 1;
+   }
+
+   .social-container {
+     margin-top: 2rem;
+   }
+
+   .social-container {
+     .support {
+       font-size: 24px;
+       justify-content: center;
+       align-items: center;
+       display: flex;
+       width: 100%;
+
+       svg {
+         margin-right: 0.5rem;
+         width: 20px;
+         height: 20px;
+         flex-shrink: 0;
+       }
+
+       a {
+         color: #05b642;
+         font-size: 24px;
+         text-decoration: none;
+         cursor: pointer;
+         display: flex;
+         align-items: center;
+         padding-bottom: 0.4rem;
+       }
+     }
+
+
+     .contact {
+       font-size: 12px;
+
+       span {
+         color: white;
+         font-size: 14px;
+       }
+
+       svg {
+         margin-right: 0.5rem;
+         width: 20px;
+         height: 20px;
+         flex-shrink: 0;
+
+       }
+     }
+
+     .icons {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+     }
+
+
+   }
+
+
+
+
+   .promo-overlay-content-full {
+     width: 100%;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     position: relative;
+   }
+
+   .promo-overlay-header-full {
+     object-fit: inherit;
+     color: white;
+     padding: 1rem 1.5rem;
+     display: flex;
+     align-items: center;
+     gap: 1rem;
+     min-height: 60px;
+   }
+
+   /* Custom background color class */
+   .bg-\[\#03342b\] {
+     background-color: #03342b !important;
+   }
+
+   /* Custom max-height class */
+   .max-h-\[330px\] {
+     @media (min-width: 768px) {
+       max-height: 330px !important;
+     }
+   }
+
+   .imgpromo {
+     margin: auto;
+     object-fit: fill;
+     object-position: top;
+     margin-bottom: 0.5rem;
+     overflow: hidden;
+     border-radius: 10px;
+
+     max-width: 350px;
+
+     @media (min-width: 480px) {
+       max-height: 240px;
+     }
+   }
+
+   /* Responsive image styles */
+   .h-60 {
+     height: 15rem;
+   }
+
+   .w-80 {
+     width: 20rem;
+   }
+
+
+
+   /* Responsive adjustments */
+   @media (max-width: 768px) {
+     .h-60.w-80 {
+       height: auto;
+     }
+
+
+   }
+
+   @media (max-width: 480px) {
+     .h-60.w-80 {
+       height: 160px;
+     }
+
+     .max-h-\[330px\] {
+       max-height: 250px !important;
+     }
+   }
+
+   .back-button {
+     background: none;
+     border: none;
+     color: white;
+     cursor: pointer;
+     padding: 0.5rem;
+     border-radius: 4px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     transition: background-color 0.2s ease;
+   }
+
+   .back-button:hover {
+     background-color: rgba(255, 255, 255, 0.1);
+   }
+
+   .promo-overlay-header-full h2 {
+     color: white;
+     font-size: 1.25rem;
+     font-weight: 600;
+     margin: 0;
+     text-transform: uppercase;
+     letter-spacing: 0.5px;
+   }
+
+   .promo-overlay-body-full {
+     flex: 1;
+     padding: 2rem;
+     overflow-y: auto;
+     max-height: calc(100vh - 80px);
+     background-color: #2d2d2d;
+     color: #ffffff;
+
+     h6 {
+       font-size: 16px;
+     }
+   }
+
+   .promo-section {
+     margin-bottom: 2rem;
+   }
+
+   .promo-section h3 {
+     color: #ffffff;
+     font-size: 1.5rem;
+     font-weight: 700;
+     margin: 0 0 0.5rem 0;
+     text-transform: uppercase;
+   }
+
+   .promo-section h4 {
+     color: #ffffff;
+     font-size: 1.1rem;
+     font-weight: 600;
+     margin: 1.5rem 0 1rem 0;
+   }
+
+   .promo-section h5 {
+     color: #ffffff;
+     font-size: 1rem;
+     font-weight: 600;
+     margin: 1rem 0 0.5rem 0;
+   }
+
+   .promo-section p {
+     color: #cccccc;
+     line-height: 1.6;
+     margin: 0 0 1rem 0;
+   }
+
+   .bonus-table {
+     margin: 1rem 0;
+   }
+
+   .table-header {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap: 1rem;
+     padding: 0.75rem 0;
+     border-bottom: 1px solid #404040;
+     font-weight: 600;
+     color: #ffffff;
+   }
+
+   .table-row {
+     display: grid;
+     grid-template-columns: 2fr 1fr;
+     gap: 1rem;
+     padding: 0.5rem 0;
+     border-bottom: 1px solid #404040;
+     color: #cccccc;
+   }
+
+   .table-row:last-child {
+     border-bottom: none;
+   }
+
+   .terms-section {
+     margin: 1.5rem 0;
+   }
+
+   .contact-section {
+     margin-top: 3rem;
+     padding-top: 2rem;
+     border-top: 1px solid #404040;
+     text-align: center;
+   }
+
+   .contact-info {
+     color: #cccccc;
+   }
+
+   .contact-email {
+     color: #4CAF50;
+     font-size: 1.1rem;
+     font-weight: 600;
+     display: block;
+     margin-bottom: 0.5rem;
+   }
+
+   .contact-info p {
+     margin: 0;
+     color: #cccccc;
+   }
+
+   /* Responsive design for overlay */
+   @media (max-width: 768px) {
+     .promo-overlay-body-full {
+       padding: 1rem;
+     }
+
+     .table-header,
+     .table-row {
+       grid-template-columns: 1fr;
+       gap: 0.5rem;
+     }
+
+     .table-header span:first-child,
+     .table-row span:first-child {
+       font-weight: 600;
+     }
+   }
