@@ -73,8 +73,17 @@ function generateContactSection() {
 }
 function start() {
 	const readmoreBtn = document.querySelectorAll('.readmore');
-	if (readmoreBtn) {
+	const imgBtn = document.querySelectorAll('.imgpromo');
+	if (readmoreBtn || imgBtn) {
+		//click for read more
 		readmoreBtn.forEach(btn => {
+			btn.addEventListener('click', () => {
+				const promoNumber = btn.getAttribute('data-number');
+				showPromoOverlay(promoNumber);
+			});
+		});
+		//click for img
+		imgBtn.forEach(btn => {
 			btn.addEventListener('click', () => {
 				const promoNumber = btn.getAttribute('data-number');
 				showPromoOverlay(promoNumber);
