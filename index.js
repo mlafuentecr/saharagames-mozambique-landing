@@ -8,13 +8,13 @@ function generateContactSection() {
 		<div class="flex w-full justify-center social-container">
 			<ul class="text-primary flex max-w-xl flex-col justify-center gap-2 overflow-x-auto rounded-xl p-2 text-2xl text-white">
 				<li class="flex items-center gap-x-2 support">
-					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-primary h-4 w-4 shrink-0"><path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"></path></svg><a class="text-active hover:text-white active:text-active" href="mailto:kesupport@saharagames.com?subject = Feedback">kesupport@saharagames.com</a>
+					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="text-primary h-4 w-4 shrink-0"><path d="M3.478 2.405a.75.75 0 00-.926.94l2.432 7.905H13.5a.75.75 0 010 1.5H4.984l-2.432 7.905a.75.75 0 00.926.94 60.519 60.519 0 0018.445-8.986.75.75 0 000-1.218A60.517 60.517 0 003.478 2.405z"></path></svg><a class="text-active hover:text-white active:text-active" href="mailto:support@saharagames.com?subject = Feedback">support@saharagames.com</a>
 				</li>
 				<li class="flex items-center gap-x-2 contact" style="margin: 0.5rem 0;">
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="h-4 w-4 shrink-0 text-primary-500"><path fill-rule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clip-rule="evenodd"></path></svg>
 					<div class="flex flex-col contact ">
 						<div class="text-primary hover:text-primary active:text-primary flex gap-x-2 text-sm">
-							<span class="flex flex-wrap gap-1"><span >Contact us: 0783500000,</span><span> 0733200211,</span><span> 0103434404</span></span>
+							<span class="flex flex-wrap gap-1"><span >Contact us: 0783500000,</span><span> 0733200211,</span><span>0103434404</span></span>
 						</div>
 					</div>
 				</li>
